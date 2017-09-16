@@ -1,0 +1,61 @@
+\documentclass[a4paper,10pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{setspace}
+\singlespacing
+
+
+\title{Assignment:\\\texttt{PhD Rotation Project Proposal}}
+\author{Tanmoy Sen \\ PhD. student working as an advisee of Professor Haiying Shen\\
+Email: ts5xm@virgina.edu}
+
+\begin{document}
+
+\maketitle
+
+\section{Introduction}
+With the advent of IoT based applications to keep every “thing” ubiquitously connected, the demand of reliable and ultra-low latency services for massive number of devices is highly increasing. Cloud infrastructure is considered to be the prime medium to provide such back-end service. In spite of its scalability, security and resource provisioning has been major issues for cloud providers that stand as obstacles to meet up their service level agreements. In my first rotation under supervision of Professor Haiying Shen, two problems addressing mentioned issues will be approached.
+
+\smallskip
+
+\section{Statement of Problem(s)}
+Cloud and IoT are inseparable. The growth of IoT and the rapid development of associated technologies create a widespread connection of “things”. This has lead to the production of large amounts of data, which needs to be stored, processed and accessed. Cloud computing as a paradigm for big data storage and analytics emerges as the candidate for processing such big amount of data \cite{website}. Consequently, the demand of better service in the cloud platform is more than ever. Following are the problems which are to be addressed to ensure service of the cloud during this period of increasing demand.
+
+\begin{itemize}
+    \item \textbf{Problem 1:} The sharing of \textit{Last Level Cache (LLC)} within a socket without any access control can lead to cause a program from one VM to evict LLC cache lines belonging to another VM. This will increase the number of cache misses and degrade performance measure in cloud. Cache Cleansing and Bus Contention attacks\cite{cacheCleansing} are recently proposed inducing the vulnerabilities of cache and bus sharing respectively. The proposed problem concerns with mining probable patterns that distinguish these attacks from regular contentions by real-time profiling of applications running on single or multiple VMs in both attack and regular scenario. Based on the observed patterns possible solution approach will be formulated. 
+    \item \textbf{Problem 2:} The emergence of 5G will accelerate the IoT vision of providing ubiquitous and reliable services for large number of devices. Service-guaranteed resource management is one of the prerequisites for 5G to achieve this vision. This project will study the performance-measure of different Machine Learning approaches for prediction of cloud workload and automatic resource provisioning in order to find the best-fit approach considering different scenarios and different service level agreement (SLA) requirements\cite{proposalHuawei}. 
+\end{itemize}
+
+\smallskip
+
+\section{Novelty of Problem(s)}
+
+\begin{itemize}
+    \item \textbf{Problem 1:} Both cache cleansing and bus locking attacks are recently proposed attacks to exploit the vulnerabilities of resource sharing in the cloud. Further studies to distinguish normal contention from the attack phase will be a challenging but a noteworthy contribution in this field.
+    \item \textbf{Problem 2:} The topic of resource management in the cloud data centers has been widely studied in recent years. Existing work on improving resource utilization in cloud is mostly focused on Virtual Machine (VM) consolidation. State of the art works on predicting workload for resource management are based on methods such as \textit{Fast Fourier Transform (FFT)} and \textit{Support Vector Machine (SVM)}. No effort has been devoted to studying and comparing the performance of different Artificial Intelligence and Machine Learning approaches for cloud workload prediction and automatic resource provisioning for providing guidance on finding the best-fit approach considering different scenarios and different SLA requirements. The objective of this project is to overcome this difference and bridging machine learning approaches with prediction methodologies of workload and resource provisioning in the cloud platform \cite{proposalHuawei}. 
+\end{itemize}
+
+\smallskip
+\section{Goals to Achieve during First Rotation}
+Considering the scope of the mentioned problems in section 2, following are the goals hoping to be met at the end of the first rotation cycle.
+
+\begin{itemize}
+    \item \textbf{Problem 1:} Primary focus during this rotation is to work with Mr. Zhuzhao Li to find patterns and probable solutions primarily addressing the cache cleansing attacks.
+    \item \textbf{Problem 2:} During the first rotation, the focal point would be on surveying on prediction methods for cloud workload prediction and automatic resource provisioning.
+\end{itemize}
+
+\smallskip
+
+\section{Justification of the Proposed Goals}
+The achievement of the proposed goals are largely dependent on the background studies and implementation of the systems within the short time period of ten weeks. Consequently, the assumption of completion of the mentioned tasks during this rotation cycle are made on the basis of adequate knowledge acquisition within this duration and structured code availability for the implementations. If the necessary basis are fulfilled, utmost effort would be provided to meet up the goals at the end of first cycle.
+
+\smallskip
+
+\section{Conclusion}
+The advancement of “Internet of Things" has resulted in a significant increase of cloud enabled devices which ultimately leads to extensive use of cloud based systems. In order to maintain the reliable service of cloud infrastructure to IoT platforms further research in its security and resource management is of prime concern. During the first rotation cycle as a PhD student of the University of Virginia my goal will be to explore and try to contribute in this specific research domain.  
+
+\begin{thebibliography}{9}
+\bibitem{cacheCleansing}Tianwei Zhang, Yinqian Zhang and Ruby B. Lee,  \textit{DoS Attacks on Your Memory in Cloud}. Proceedings of the 2017 ACM on Asia Conference on Computer and Communications Security, ASIA CCS '17.
+\bibitem{proposalHuawei} Professor Haiying Shen, \textit{Proposal written to Huawei.}
+\bibitem{website} David Linthicum, The cloud and the Internet of things are inseparable,\\\texttt{https://www.infoworld.com/article/3021059/\\cloud-computing/cloud-and-internet-of-things-are-inseparable.html}
+\end{thebibliography}
+\end{document}
